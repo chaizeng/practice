@@ -6,7 +6,7 @@ public interface IHappyPeople {
 	
 	void subscribeTicket();
 	
-	void travle();
+	void travel();
 	
 	void celebrate();
 

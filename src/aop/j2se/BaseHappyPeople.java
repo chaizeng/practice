@@ -5,7 +5,7 @@ public abstract class BaseHappyPeople implements IHappyPeople{
 	@Override
 	public void celebrateSpringFestival() {
 		subscribeTicket();
-		travle();
+		travel();
 		celebrate();
 	}
 

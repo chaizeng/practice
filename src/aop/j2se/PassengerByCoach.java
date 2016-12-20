@@ -1,9 +1,9 @@
 package aop.j2se;
 
-public class PassengerByCoach extends BaseHappyPeople{
+public class PassengerByCoach extends BaseHappyPeople implements IHappyPeople{
 
 	@Override
-	public void travle() {
+	public void travel() {
 		System.out.println("By Coach");
 	}
 
