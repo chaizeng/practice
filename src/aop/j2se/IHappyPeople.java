@@ -1,4 +1,4 @@
-package j2se;
+package aop.j2se;
 
 public interface IHappyPeople {
 	

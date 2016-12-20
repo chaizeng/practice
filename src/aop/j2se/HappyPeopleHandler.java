@@ -1,4 +1,4 @@
-package j2se;
+package aop.j2se;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
