@@ -18,6 +18,7 @@ public class HappyPeopleHandler implements InvocationHandler{
 		methodNames.add("travel");
 		methodNames.add("celebrate");
 		methodNames.add("subscribeTicket");
+		methodNames.add("celebrateSpringFestival");
 		
 	}
 
@@ -47,7 +48,11 @@ public class HappyPeopleHandler implements InvocationHandler{
 		}
 		return result;
 	}
-	
+	/**
+	 * 生成代理对象
+	 * @param delege
+	 * @return
+	 */
 	public IHappyPeople getProxy(IHappyPeople delege){
 		this.delege = delege;
 		return (IHappyPeople)Proxy.newProxyInstance(
