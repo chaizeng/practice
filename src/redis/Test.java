@@ -15,7 +15,7 @@ public class Test {
 	}
 	
 	/**
-	 * ×Ö·û´®²âÊÔ
+	 * ²âÊÔ×Ö·û´®
 	 */
 	public void testString(){
 		redis.set("name", "kevin");
@@ -23,7 +23,7 @@ public class Test {
 	}
 	
 	/**
-	 * ¶ÔÏó²âÊÔ
+	 * ²âÊÔ¶ÔÏó
 	 */
 	public void testObject(){
 		User user = new User();
