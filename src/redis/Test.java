@@ -15,7 +15,7 @@ public class Test {
 	}
 	
 	/**
-	 * ²âÊÔ×Ö·û´®
+	 * å­—ç¬¦ä¸²æµ‹è¯•
 	 */
 	public void testString(){
 		redis.set("name", "kevin");
@@ -23,14 +23,14 @@ public class Test {
 	}
 	
 	/**
-	 * ²âÊÔ¶ÔÏó
+	 * å¯¹è±¡æµ‹è¯•
 	 */
 	public void testObject(){
 		User user = new User();
 		user.setName("jack");
 		user.setAddress("58994949");
 		user.setAge(30);
-		user.setSex("ÄĞ");
+		user.setSex("ç”·");
 		String key = "jack";
 		redis.set(key.getBytes(), Tool.serialize(user));
 		
