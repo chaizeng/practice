@@ -7,8 +7,14 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class Tool {
 
@@ -57,5 +63,32 @@ public class Tool {
 		}
     	return null;
     }
+    
+    public static byte[][] mergeArrays(byte[] firstArray, byte[]... additionalArrays) {
+
+		//Assert.notNull(firstArray, "first array must not be null");
+		//Assert.notNull(additionalArrays, "additional arrays must not be null");
+
+		byte[][] result = new byte[additionalArrays.length + 1][];
+		result[0] = firstArray;
+		System.arraycopy(additionalArrays, 0, result, 1, additionalArrays.length);
+
+		return result;
+	}
+    
+    
+    public static void main(String[] args) {
+		byte[] firstArray = {3,5,7};
+		byte[] secondArray = {0,3,6,77};
+		byte[] additionalArrays = {-1,34,56,5};
+		byte[][] res = Tool.mergeArrays(firstArray, secondArray,additionalArrays);
+		for (byte[] i : res) {
+			for (byte j : i) {
+				System.out.print(j + "\t");
+			}
+			System.out.println();
+		}
+		
+	}
     
 }
